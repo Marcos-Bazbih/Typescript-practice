@@ -12,7 +12,7 @@ const Student = () => {
     }
 
     return (
-        <div>
+        <div className="main">
             <h1>Student</h1>
             <button onClick={SendDispatch}>DISPATCH</button>
             {

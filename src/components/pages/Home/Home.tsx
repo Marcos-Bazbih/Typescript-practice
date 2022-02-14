@@ -160,7 +160,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className="main">
             <h1>Home</h1>
             {/* <p>age: {age}</p>
             <p>firstName: {firstName}</p>

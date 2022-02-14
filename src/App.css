@@ -3,50 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
 body{
   background-color: #282c34;
   color: wheat;
 }
+
 .App {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'sidebar main main'
+  'footer footer footer'
+  ;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 10% 80% 10%;
 }
-.top-left, .bottom-left, .top-right, .bottom-right{
-  position: absolute;
-  height: 15vh;
+.main{
+  grid-area: main;
+  border-left: 2px solid wheat;
 }
-.top-left{
-  top: 10vh;
-  left: 5vw;
-}
-.top-right{
-  top: 10vh;
-  right: 5vw;
-}
-.bottom-left{
-  bottom: 10vh;
-  left: 5vw;
-}
-.bottom-right{
-  bottom: 10vh;
-  right: 5vw;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 2s linear;
-  }
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .student-box{
   width: 50vw;
