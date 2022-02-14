@@ -18,7 +18,7 @@ const Student = () => {
             {
                 students ? (
                     students.map((student: IUser, index: number) =>
-                        <div key={index}>
+                        <div key={index} className="student-box">
                             <h1>firstName: {student.firstName}</h1>
                             <h1>lastName: {student.lastName}</h1>
                             <h1>age: {student.age}</h1>

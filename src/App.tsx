@@ -12,8 +12,8 @@ const App = () => {
         <img src={logo} className="App-logo top-right" alt="logo" />
         <img src={logo} className="App-logo bottom-left" alt="logo" />
         <img src={logo} className="App-logo bottom-right" alt="logo" />
-        {/* <Home /> */}
-        <Student />
+        <Home />
+        {/* <Student /> */}
     </div>
   );
 }

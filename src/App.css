@@ -46,3 +46,10 @@ body{
     transform: rotate(360deg);
   }
 }
+
+
+.student-box{
+  width: 50vw;
+  margin: auto;
+  border: 2px solid wheat;
+}
