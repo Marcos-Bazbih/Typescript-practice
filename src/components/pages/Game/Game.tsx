@@ -65,7 +65,8 @@ const Game = () => {
 
 
     return (
-        <div className="main">
+        <>
+            <h1>Game</h1>
             {/* <button onClick={()=>{PrintMaxAndMinNum(Number(prompt("enter a number")))}}>CLick</button> */}
             {/* <button onClick={GetEvenArray}>CLick</button> */}
             {/* <button onClick={()=>IsNumInRandomArray(4)}>CLick</button> */}
@@ -74,11 +75,10 @@ const Game = () => {
             {/* <h1>Game</h1>
             {
                 numbers.map((num: number, i: number) =>
-                    <h1 key={i}>{num}</h1>
+                <h1 key={i}>{num}</h1>
                 )
             } */}
-
-        </div>
+        </>
     )
 }
 

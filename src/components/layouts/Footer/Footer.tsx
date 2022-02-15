@@ -1,10 +1,14 @@
-import "./Footer.css";
+import StyledFooter from "../../styles/Footer.style";
+import { useContext } from "react";
+import { ModeContext } from "../../../contexts/ThemeContext";
 
 const Footer = () => {
-    return(
-        <footer className="footer">
+    const { mode } = useContext(ModeContext);
+
+    return (
+        <StyledFooter <any> mode={mode}>
             <h1>Footer</h1>
-        </footer>
+        </StyledFooter>
     )
 }
 export default Footer;

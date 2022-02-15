@@ -6,10 +6,6 @@
 html{
   font-size: 62.5%;
 }
-body{
-  background-color: #282c34;
-  color: wheat;
-}
 
 .App {
   width: 100vw;
@@ -21,16 +17,6 @@ body{
   'sidebar main main'
   'footer footer footer'
   ;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 10% 80% 10%;
-}
-.main{
-  grid-area: main;
-  border-left: 2px solid wheat;
-}
-
-.student-box{
-  width: 50vw;
-  margin: auto;
-  border: 2px solid wheat;
 }

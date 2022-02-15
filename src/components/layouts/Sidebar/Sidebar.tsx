@@ -1,13 +1,18 @@
-import "./Sidebar.css";
-import { Link } from "react-router-dom";
+import { useContext } from "react"; 
+import { ModeContext } from "../../../contexts/ThemeContext";
+import StyledSidebar from "../../styles/Sidebar.style";
+import StyledSidebarLink from "../../styles/SidebarLink.style";
 
 const Sidebar = () => {
+    const { mode } = useContext(ModeContext);
     return (
-        <nav className="sidebar">
-            <Link className="sidebar-link" to={"/"}>Home</Link>
-            <Link className="sidebar-link" to={"/student"}>Student</Link>
-            <Link className="sidebar-link" to={"/game"}>Game</Link>
-        </nav>
+        <StyledSidebar <any> mode={mode}>
+            <StyledSidebarLink <any> mode={mode} to={"/"}>Home</StyledSidebarLink>
+            <StyledSidebarLink <any> mode={mode} to={"/student"}>Student</StyledSidebarLink>
+            <StyledSidebarLink <any> mode={mode} to={"/game"}>Game</StyledSidebarLink>
+            <StyledSidebarLink <any> mode={mode} to={"/lotto"}>Lotto</StyledSidebarLink>
+            <StyledSidebarLink <any> mode={mode} to={"/apartment"}>Apartment</StyledSidebarLink>
+        </StyledSidebar>
     )
 }
 export default Sidebar;

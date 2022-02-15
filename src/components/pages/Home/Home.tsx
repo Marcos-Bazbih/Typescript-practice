@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = () => { 
     // let age: number = 23;                  //! 2
     // let firstName: string = "marcos";      //! 3
     // let isInClass: boolean = true;         //! 4
@@ -160,15 +160,15 @@ const Home = () => {
 
 
     return (
-        <div className="main">
+        <>
             <h1>Home</h1>
             {/* <p>age: {age}</p>
             <p>firstName: {firstName}</p>
             <p>isInClass: {isInClass}</p>
             <p>grades: {grades}</p>
             <button onClick={PopMsg}>Alert Welcome</button>
-            <button onClick={PopInfo}>Alert Info</button> */}
-        </div>
+        <button onClick={PopInfo}>Alert Info</button> */}
+        </>
     )
 }
 
