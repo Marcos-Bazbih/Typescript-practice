@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const ModeContext = createContext<any>(null);
 
@@ -15,6 +15,14 @@ const dayMode = {
 
 const ThemeContextProvider = ({ children }: any) => {
     const [mode, setMode] = useState(dayMode);
+    useEffect(()=>{
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            setMode(darkMode)
+        }
+        else{
+            setMode(dayMode)
+        }
+    },[])
     const ToggleTheme = () => {
         mode === dayMode ? setMode(darkMode) : setMode(dayMode)
     };

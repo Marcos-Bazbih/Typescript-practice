@@ -13,19 +13,19 @@ const Sidebar = () => {
     return (
         <StyledSidebar <any> mode={mode}>
             <StyledSidebarLink <any> mode={mode} to={"/"}>
-                <HomeIcon style={{ "fontSize": "7rem" }} />
+                <HomeIcon style={{ "fontSize": "5rem" }} />
             </StyledSidebarLink>
             <StyledSidebarLink <any> mode={mode} to={"/student"}>
-                <PersonIcon style={{ "fontSize": "7rem" }} />
+                <PersonIcon style={{ "fontSize": "5rem" }} />
             </StyledSidebarLink>
             <StyledSidebarLink <any> mode={mode} to={"/game"}>
-                <VideogameAssetIcon style={{ "fontSize": "7rem" }} />
+                <VideogameAssetIcon style={{ "fontSize": "5rem" }} />
             </StyledSidebarLink>
             <StyledSidebarLink <any> mode={mode} to={"/lotto"}>
-                <MonetizationOnIcon style={{ "fontSize": "7rem" }} />
+                <MonetizationOnIcon style={{ "fontSize": "5rem" }} />
             </StyledSidebarLink>
             <StyledSidebarLink <any> mode={mode} to={"/apartment"}>
-                <ApartmentIcon style={{ "fontSize": "7rem" }} />
+                <ApartmentIcon style={{ "fontSize": "5rem" }} />
             </StyledSidebarLink>
         </StyledSidebar>
     )
